@@ -1,0 +1,16 @@
+name: "My JS Build Action"
+description: "A JavaScript action with build step"
+branding:
+  icon: "zap"       # choose from GitHub icon set (https://icons.github.com/)
+  color: "blue"     # blue, green, yellow, red, orange, purple, gray, black
+author: "vlad-yarko"
+inputs:
+  name:
+    description: "Your name"
+    required: true
+outputs:
+  greeting:
+    description: "Greeting message"
+runs:
+  using: "node20"
+  main: "dist/index.js"
